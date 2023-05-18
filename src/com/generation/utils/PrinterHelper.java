@@ -45,10 +45,10 @@ public class PrinterHelper
         try{
              birthDate = formatter.parse(scanner.next());
 
-        } catch(ParseException e)
+        } catch(Exception e)
         //If it fails the pattern, return a message to the user
         {
-            System.out.println("That't not a valid date format. Try again in the format mm/dd/yyyy");
+            System.out.println("That's not a valid date format. Please use mm/dd/yyyy");
         }
     }
         System.out.println( "|-------------------------------------|" );
